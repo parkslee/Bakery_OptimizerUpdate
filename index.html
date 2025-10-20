@@ -102,9 +102,15 @@
         let firestoreError = null;
 
         // Mandatorty globals injected by environment
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
-        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? JSON.parse(__initial_auth_token) : null;
+        const firebaseConfig = {
+  apiKey: "AIzaSyC3d4UjDi__vL4VmMaTzWjeSE7W8Dx1vP4",
+  authDomain: "bakery-optimizer.firebaseapp.com",
+  projectId: "bakery-optimizer",
+  storageBucket: "bakery-optimizer.firebasestorage.app",
+  messagingSenderId: "820476887465",
+  appId: "1:820476887465:web:1e3c7e2e784a9bc10204b8",
+  measurementId: "G-TH16ZFQZEE"
+};
 
 
         // --- SCHEDULING CONSTANTS (UPDATED FOR HOURLY COVERAGE) ---
