@@ -109,11 +109,11 @@
 
         // --- SCHEDULING CONSTANTS (UPDATED FOR HOURLY COVERAGE) ---
         const DAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        // HOURS array contains the start hour of each 1-hour block (7:00, 8:00, ..., 16:00).
-        // It covers the period from 07:00 up to (but not including) 17:00.
-        const HOURS = Array.from({ length: 10 }, (_, i) => i + 7); // 7 (07:00) to 16 (16:00)
-        const MIN_START_HOUR = 7;
-        const MAX_END_HOUR = 17;
+        // HOURS array contains the start hour of each 1-hour block (3:00, 4:00, ..., 20:00).
+        // It covers the period from 03:00 up to (but not including) 20:00.
+        const HOURS = Array.from({ length: 17 }, (_, i) => i + 3); // 7 (03:00) to 16 (20:00)
+        const MIN_START_HOUR = 3;
+        const MAX_END_HOUR = 20;
         const SHIFT_MIN = 4;
         const SHIFT_MAX = 8;
         const BUDGET_BUFFER = 0.03;
